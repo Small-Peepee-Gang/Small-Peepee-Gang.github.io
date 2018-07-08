@@ -3,17 +3,12 @@
 <head>
 </head>
 <body>
-	<button onclick="revealOwO()">OWO?</button>
-	<div id ="UwU"><img src="/images/owo.gif" alt="What's this?"></div>
 	<script>
-		function myFunction() {
-			var x = document.getElementById("UwU");
-			if (x.style.display === "none") {
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
+		function showOwO () {
+			document.getElementById('owoGif').src = 'images/owo.gif'
 		}
 	</script>
+	<img src="" id="owoGif">
+	<button onclick="showOwO()">OWO?</button>
 </body>
 </html>
