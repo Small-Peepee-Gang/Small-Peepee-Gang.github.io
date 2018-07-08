@@ -1,3 +1,3 @@
 function revealImg() {
-	document.getElementById("hiddenImg").style.display = 'block';
+	document.getElementById("img").style.display = 'block';
 }

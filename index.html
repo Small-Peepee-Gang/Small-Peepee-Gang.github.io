@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="js/script.js"></script>
 </head>
 <body>
-	<button onclick="revealImg()">OWO?</button>
-	<p id="hiddenImg" style="display:none"><img src="/images/owo.gif" alt="What's This?"></p>
+	<button onclick="revealOwO()">OWO?</button>
+	<div id ="UwU"><img src="/images/owo.gif" alt="What's this?"></div>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("UwU");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
 </body>
 </html>
