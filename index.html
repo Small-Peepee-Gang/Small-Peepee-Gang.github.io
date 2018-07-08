@@ -3,12 +3,14 @@
 <head>
 </head>
 <body>
-	<script>
-		function showOwO () {
-			document.getElementById('owoGif').src = 'images/owo.gif'
-		}
+	<script type="text/javascript">
+		int clicks = 0;
+		function click() {
+			clicks += 1;
+			document.getElementById("clicks").innerHTML = clicks;
+		};
 	</script>
-	<img src="" id="owoGif">
-	<button onclick="showOwO()">OWO?</button>
+	<button type ="button" onclick="click()">OWO</button>
+	<p>Boops: <a id="clicks">0</a>
 </body>
 </html>
